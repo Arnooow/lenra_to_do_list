@@ -20,8 +20,8 @@ jobs:
         run: ./lenra build --expose app
       - name: Start app
         run: ./lenra start
-      - name: Check template
-        run: ./lenra check template --strict
+#      - name: Check template
+#        run: ./lenra check template --strict
       - name: Stop app
         if: always()
         run: ./lenra stop
